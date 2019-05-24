@@ -10,3 +10,6 @@ RUN apk --no-cache add \
 RUN gem install --no-document --no-ri terraform_landscape
 
 RUN pip install --no-cache-dir awscli
+
+RUN git clone https://github.com/tfutils/tfenv.git /.tfenv
+RUN ln -sf /.tfenv/bin/* /usr/local/bin
