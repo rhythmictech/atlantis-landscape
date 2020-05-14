@@ -7,7 +7,7 @@ RUN apk --no-cache add \
   coreutils \
   diffutils # this is required for diffy to work on alpine
 
-RUN gem install --no-document --no-ri terraform_landscape
+RUN gem install --no-document terraform_landscape
 
 RUN pip install --no-cache-dir awscli
 
